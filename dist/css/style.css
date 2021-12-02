@@ -1,3 +1,64 @@
 html {
     font-family: 'Rubik', sans-serif;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: hsl(226, 43%, 10%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.8rem;
+}
+
+.activity {
+    height: 280px;
+}
+
+.activity__wrapper {
+    
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.activity__wrapper  {
+    background-color: hsl(235, 46%, 20%);
+}
+
+.activity__icon {
+    width: 25px;
+    height: 10px;
+    background: url('../images/icon-ellipsis.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
