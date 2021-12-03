@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2.4fr 7.6fr;
+    gap: 20px;
+    width: 96%;
+    max-width: 1200px;
+}
+
+.profile {
+    min-width: auto;
+    width: 100%;
+    max-width: auto;
+    margin: 0px;
+}
+
+.profile__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px 34px;
+    padding-bottom: 76px;
+    margin: 0px;
+}
+
+.profile__name--enf {
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.profile .periods {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px 34px;
+    margin: 0px;
+}
+
+.period__title {
+    margin-bottom: 10px;
+}
+
+.track {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.activity {
+    position: relative;
+    height: auto;
+    border-radius: 14px;
+}
+
+.activity__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "name icon"
+        "current current"
+        "previous previous";
+    gap: 0px 0px ;
+    height: 76%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    position: absolute;
+    bottom: 0px;
+}
+.activity__current {
+    font-size: 32px;
+    margin-top: 12px;
+    align-self: end;
+}
+
+.activity__previous {
+    text-align: left;
+}

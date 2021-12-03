@@ -37,15 +37,18 @@ const addContent = (item, wrapper) => {
     const nodes = []
     const title = document.createElement('h2');
     title.textContent = item.title
+    title.className = "activity__name"
 
     const current = document.createElement('span');
     current.textContent = `${item.timeframes.weekly.current}hrs`
+    current.className = "activity__current";
 
     const menu = document.createElement('div');
     menu.className = `activity__icon`
 
     const previous = document.createElement('span');
     previous.textContent = `last week - ${item.timeframes.weekly.previous}hrs`
+    previous.className = "activity__previous";
     
     nodes.push(title);
     nodes.push(current);
@@ -55,3 +58,7 @@ const addContent = (item, wrapper) => {
 }
 
 createApp();
+
+
+
+

@@ -10,44 +10,176 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 1.6rem;
     background-color: hsl(226, 43%, 10%);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+main {
+    text-align: center;
+}
+
+.profile {
+    min-width: 320px;
+    width: 90%;
+    max-width: 400px;
+    margin: 0px auto;
+    margin-bottom: 25px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 13px;
+}
+
+.profile__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 25px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 13px;
+}
+
+.profile__picture img{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.profile__name {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    color: hsla(0, 0%, 100%, 0.66);
+}
+
+.profile__name--enf {
+    font-size: 20px;
+    color: white;
+}
+
+.profile .periods {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.profile .period__title {
+    background-color: transparent;
+    color: hsl(235, 45%, 61%);
+    border: none;
+}
+
+.profile .period__title:focus {
+    color: white; 
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 1.8rem;
 }
 
+.track {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .activity {
-    height: 280px;
+    position: relative;
+    height: 180px;
+    border-radius: 14px;
 }
 
 .activity__wrapper {
-    
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "name icon"
+        "current previous";
+    gap: 16px 0px ;
+    height: 76%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    position: absolute;
+    bottom: 0px;
 }
 
+.activity__name {
+    display: block;
+    grid-area: name;
+    align-self: end;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.activity__icon {
+    display: block;
+    grid-area: icon;
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+}
+
+.activity__current {
+    display: block;
+    grid-area: current;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+}
+
+.activity__previous {
+    display: block;
+    grid-area: previous;
+    text-align: right;
+    color: hsl(236, 100%, 87%);
+}
+
+
+
 .work {
-    background-color: hsl(15, 100%, 70%);
+    background: url('../images/icon-work.svg'), hsl(15, 100%, 70%);   
 }
 
 .play {
-    background-color: hsl(195, 74%, 62%);
+    background: url('../images/icon-play.svg'), hsl(195, 74%, 62%);
 }
 
 .study {
-    background-color: hsl(348, 100%, 68%);
+    background: url('../images/icon-study.svg'), hsl(348, 100%, 68%);
 }
 
 .exercise {
-    background-color: hsl(145, 58%, 55%);
+    background: url('../images/icon-exercise.svg'), hsl(145, 58%, 55%);
 }
 
 .social {
-    background-color: hsl(264, 64%, 52%);
+    background: url('../images/icon-social.svg'), hsl(264, 64%, 52%);
 }
 
 .self-care {
-    background-color: hsl(43, 84%, 65%);
+    background: url('../images/icon-self-care.svg'), hsl(43, 84%, 65%);
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+    background-repeat: no-repeat, repeat;
+    background-position-x: right;
+    background-position-y: -10px;
 }
 
 .activity__wrapper  {

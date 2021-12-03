@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" media="screen and (min-width: 940px)" href="./css/desktop.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,18 +19,20 @@
   </style>
 </head>
 <body>
-  <main id="app">
+  <main id="app" class="main">
     <section class="profile">
-      <figure>
-        <img src="./images/image-jeremy.png" alt="Jeremy Robson picture">
-      </figure>
-      <h1>
-        Report for <span>Jeremy Robson</span>
-      </h1>
+      <div class="profile__wrapper">
+        <figure class="profile__picture">
+          <img src="./images/image-jeremy.png" alt="Jeremy Robson picture">
+        </figure>
+        <h1 class="profile__name">
+          <div>Report for</div><div class="profile__name--enf">Jeremy Robson</div>
+        </h1>
+      </div>
       <div class="periods">
-        <span class="period__title">Daily</span>
-        <span class="period__title">Weekly</span>
-        <span class="period__title">Monthly</span>
+        <button class="period__title">Daily</button>
+        <button class="period__title">Weekly</button>
+        <button class="period__title">Monthly</button>
       </div>
     </section>
     <section class="track" id="track"></section>

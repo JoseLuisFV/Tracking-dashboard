@@ -11,7 +11,7 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Blue: hsl(246, 80%, 60%)
+- Blue: hsl(246, 80%, 60%)  
 
 - Light red (work): hsl(15, 100%, 70%)
 - Soft blue (play): hsl(195, 74%, 62%)
